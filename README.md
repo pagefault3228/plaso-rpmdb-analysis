@@ -6,7 +6,7 @@ Tested against build 1.5.1.
 
 
 INSTALLATION:
-# Replace the path with the path to your plaso installation
+(Replace the path with the path to your plaso installation)
 sudo install -m 0755 rpmdb_analysis.py /usr/local/lib/python2.7/dist-packages/plaso-1.5.1-py2.7.egg/plaso/cli/helpers/rpmdb_analysis.py
 sudo sed -i "\$afrom plaso.cli.helpers import rpmdb_analysis" /usr/local/lib/python2.7/dist-packages/plaso-1.5.1-py2.7.egg/plaso/cli/helpers/__init__.py
 
