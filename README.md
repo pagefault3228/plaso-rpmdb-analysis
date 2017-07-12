@@ -5,7 +5,7 @@ This plaso analysis plugin compares event sha256 hashes with those from the exra
 Tested against build 1.5.1.
 
 
-##INSTALLATION:
+## INSTALLATION:
 (Replace the path with the path to your plaso installation)
 
 ```
@@ -16,7 +16,7 @@ sudo install -m 0755 rpmdb.py /usr/local/lib/python2.7/dist-packages/plaso-1.5.1
 sudo sed -i "\$afrom plaso.analysis import rpmdb" /usr/local/lib/python2.7/dist-packages/plaso-1.5.1-py2.7.egg/plaso/analysis/__init__.py
 ```
 
-##USAGE:
+## USAGE:
 ```
 psort.py -o null --analysis rpmdb --rpmdb-dir /home/damien/test/rpm output.plaso
 
@@ -33,9 +33,7 @@ filename:/etc/adjtime
 --------------------------------------------------------------------------------
 ```
 
-##TODO:
-
-exclude hashes of configuration files marked set to change in the rpm database.
-
-enable filtering of l2tcsv output from the original rpm database to remove files where the hashes match.
+## TODO:
+- exclude hashes of configuration files marked set to change in the rpm database.
+- enable filtering of l2tcsv output from the original rpm database to remove files where the hashes match.
 
