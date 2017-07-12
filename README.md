@@ -19,18 +19,19 @@ sudo sed -i "\$afrom plaso.analysis import rpmdb" /usr/local/lib/python2.7/dist-
 ##USAGE:
 ```
 psort.py -o null --analysis rpmdb --rpmdb-dir /home/damien/test/rpm output.plaso
+
+****************************** Analysis report: 0 ******************************
+String : Report generated from: rpmdb Generated on: 2017-07-12T06:59:23+00:00
+         Report text: RPMDB plugin determined 82 sha256 hashes differ from the
+         rpm database. filename:/usr/lib64/libnssckbi.so
+         event_sha256_sum:9c751f528fc92377f5637e89077ec3b2623cbde68f96e55662ec02a5e2d34fcf
+         rpmdb_sha256_sum:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+....(snip)....
+filename:/etc/adjtime
+         event_sha256_sum:9efeb3ab5a61932caf3d2032f0250576b38db181bebba53a23b8836ec45281b2
+         rpmdb_sha256_sum:6aa92cacc25f30a7caacd8cf772d3626f5bd5b3a75ab2dc3e74a5119f56d12df
+--------------------------------------------------------------------------------
 ```
-> ****************************** Analysis report: 0 ******************************
-> String : Report generated from: rpmdb Generated on: 2017-07-12T06:59:23+00:00
->          Report text: RPMDB plugin determined 82 sha256 hashes differ from the
->          rpm database. filename:/usr/lib64/libnssckbi.so
->          event_sha256_sum:9c751f528fc92377f5637e89077ec3b2623cbde68f96e55662ec02a5e2d34fcf
->          rpmdb_sha256_sum:e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
-> ....(snip)....
-> filename:/etc/adjtime
->          event_sha256_sum:9efeb3ab5a61932caf3d2032f0250576b38db181bebba53a23b8836ec45281b2
->          rpmdb_sha256_sum:6aa92cacc25f30a7caacd8cf772d3626f5bd5b3a75ab2dc3e74a5119f56d12df
-> --------------------------------------------------------------------------------
 
 ##TODO:
 
